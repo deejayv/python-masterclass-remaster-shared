@@ -23,37 +23,11 @@ with open(input_filename) as country_file:
 
 # print(countries)
 
-# while True:
-#     chosen_country = input('Please enter the name of a country: quit to exit ')
-#     country_key = chosen_country.casefold()
-#     if country_key in countries:
-#         country_data = countries[country_key]
-#         print(f"The capital of {chosen_country} is {country_data['capital']}")
-#     elif chosen_country == 'quit':
-#         break
-
-# chosen_country = ""
-# while chosen_country not in countries:
-#     print("Please enter a valid country...")
-#     chosen_country = input('Please enter the name of a country: quit to exit ')
-#     while chosen_country != "quit":
-#         country_key = chosen_country.casefold()
-#         if country_key in countries:
-#             country_data = countries[country_key]
-#             print(f"The capital of {chosen_country} is {country_data['capital']}")
-#     else:
-#         chosen_country = input('Please enter the name of a country: quit to exit ')
-
-
-chosen_country = ""
-while chosen_country not in countries:
-    print("Please enter a valid country...")
+while True:
     chosen_country = input('Please enter the name of a country: quit to exit ')
-    while chosen_country != "quit":
-        print(chosen_country)
-        # country_key = chosen_country.casefold()
-    #     if country_key in countries:
-    #         country_data = countries[country_key]
-    #         print(f"The capital of {chosen_country} is {country_data['capital']}")
-    # else:
-    #     chosen_country = input('Please enter the name of a country: quit to exit ')
+    country_key = chosen_country.casefold()
+    if country_key in countries:
+        country_data = countries[country_key]
+        print(f"The capital of {chosen_country} is {country_data['capital']}")
+    elif chosen_country == 'quit':
+        break
