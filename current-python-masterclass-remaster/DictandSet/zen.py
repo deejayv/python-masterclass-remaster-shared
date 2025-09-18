@@ -1,0 +1,3 @@
+# zen.py
+
+import this
